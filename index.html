@@ -3,7 +3,7 @@
 <title>Login Page</title>
 </head>
 <body>
-<form name="loginForm"  action="validate_user.php">
+<form name="loginForm" action="https://drive.google.com/open?id=1FlXlm4IYgOE9ulzPVmBDZ6kBW1J_pwN_">
 <table width="20%" bgcolor="0099CC" align="center">
 
 <tr>
@@ -22,7 +22,7 @@
 
 <tr>
 <td ><input type="Reset"></td>
-<td><input type="submit"  value="Login"></td>
+<td><input type="submit" onclick="return check(this.form)"  value="Login"></td>
 </tr>
 
 </table>
@@ -33,8 +33,7 @@ function check(form)
 
 if(form.userid.value == "Roseindia" && form.pwd.value == "Roseindia")
 {
-	window.open("https://www.w3schools.com");
-
+	
 	return true;
 }
 else
